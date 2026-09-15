@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Bublinks Preschool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+    <img src="logo.png" alt="Bublinks Preschool Logo">
+</div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="admission.html">Admissions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Heading -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us 📞</h1>
+            <p>
+                We are happy to answer your questions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+
+        <h2>Get In Touch</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📍 Address</h3>
+                <p>
+                    Bublinks Preschool<br>
+                    Bengaluru, Karnataka
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📞 Phone</h3>
+                <p>
+                    +91 98765 43210
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📧 Email</h3>
+                <p>
+                    info@bublinkspreschool.com
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+
+        <h2>Send Us a Message ✉️</h2>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text"
+                   placeholder="Your Name"
+                   required>
+
+            <br><br>
+
+            <input type="email"
+                   placeholder="Your Email"
+                   required>
+
+            <br><br>
+
+            <input type="tel"
+                   placeholder="Phone Number"
+                   required>
+
+            <br><br>
+
+            <textarea
+                placeholder="Your Message"
+                rows="5"
+                required></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bublinks Preschool</p>
+        <p>Learn • Play • Explore • Grow 🌱</p>
+    </footer>
+
+    <script>
+        function sendMessage(event) {
+
+            event.preventDefault();
+
+            alert("Thank you for contacting Bublinks Preschool! 🌈");
+
+        }
+    </script>
+
+</body>
+</html>
