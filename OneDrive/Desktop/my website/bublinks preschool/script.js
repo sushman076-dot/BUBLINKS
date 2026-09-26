@@ -1,12 +1,37 @@
-function enquireNow() {
+// Highlight the current page in the navigation
+const currentPage =
+  window.location.pathname.split("/").pop() || "index.html";
 
-    alert("Thank you for your interest in Bublinks Preschool! 🌈");
+document.querySelectorAll(".nav a").forEach((link) => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
+});
 
+
+// Mobile menu
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+  });
 }
 
 
+// Enquire Now button
+function enquireNow() {
+  window.location.href = "admission.html";
+}
+
+
+// Contact button
 function contactUs() {
-
-    alert("Please contact Bublinks Preschool for more information. 📞");
-
+  window.location.href = "contact.html";
 }

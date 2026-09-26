@@ -1,174 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Bublinks Preschool</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bublinks Preschool</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
-    <<nav>
-    <div class="logo">
-    <img src="home-bg.png" alt="Bublinks Preschool Logo">
-</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Bublinks Preschool Home">
+      <img src="assets/bublinks-logo.png" alt="Bublinks">
+    </a>
 
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="admission.html">Admissions</a>
-        <a href="contact.html">Contact</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="program.html">Programs</a>
+      <a href="gallary.html">Gallery</a>
+      <a href="admission.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- The supplied reference artwork is used here so the hero matches the picture. -->
+  <section class="hero">
+    <img src="assets/bublinks-hero.png" alt="Bublinks Preschool illustrated welcome scene">
+    <button class="hero-enquire" onclick="enquireNow()">Enquire Now →</button>
+  </section>
+
+  <section class="programs" id="programs">
+    <div class="section-heading">
+      <h2>Our Programs <span>✦</span></h2>
+      <p>Age-appropriate learning through fun and creativity.</p>
     </div>
-</nav>
 
+    <div class="program-grid">
+      <article class="program-card pink">
+        <div class="program-icon">🧸</div>
+        <h3>Play Group</h3>
+        <p>Fun activities that encourage children to learn and interact.</p>
+      </article>
 
-    <!-- Home Section -->
-    <section class="hero">
+      <article class="program-card yellow">
+        <div class="program-icon">🎨</div>
+        <h3>Nursery</h3>
+        <p>Creative learning through art, games and activities.</p>
+      </article>
 
-        <div class="hero-content">
+      <article class="program-card green">
+        <div class="program-icon">📚</div>
+        <h3>LKG</h3>
+        <p>Building basic academic and communication skills.</p>
+      </article>
 
-            <h1>Welcome to Bublinks Preschool 🌈</h1>
+      <article class="program-card purple">
+        <div class="program-icon">⭐</div>
+        <h3>UKG</h3>
+        <p>Preparing children for their next stage of education.</p>
+      </article>
+    </div>
+  </section>
 
-            <h2>Where Little Minds Grow & Explore</h2>
+ <section class="programs activities-section">
+  <div class="section-heading">
+    <h2>Fun Activities <span>🎨</span></h2>
+    <p>Learning becomes fun through creative activities.</p>
+  </div>
 
-            <p>
-                A happy and caring place where children learn,
-                play, explore and grow together.
-            </p>
+  <div class="program-grid">
+    <article class="program-card pink">
+      <div class="program-icon">🎨</div>
+      <h3>Art & Craft</h3>
+      <p>Creative activities that help children express their imagination.</p>
+    </article>
 
-            <button onclick="enquireNow()">
-                Enquire Now
-            </button>
+    <article class="program-card yellow">
+      <div class="program-icon">🎵</div>
+      <h3>Music & Dance</h3>
+      <p>Fun songs and movement activities that build confidence.</p>
+    </article>
 
-        </div>
+    <article class="program-card green">
+      <div class="program-icon">⚽</div>
+      <h3>Games</h3>
+      <p>Exciting indoor and outdoor games for active learning.</p>
+    </article>
 
-    </section>
+    <article class="program-card purple">
+      <div class="program-icon">📖</div>
+      <h3>Storytelling</h3>
+      <p>Interesting stories that encourage listening and imagination.</p>
+    </article>
+  </div>
+</section>
 
+  <section class="contact-strip">
+    <h2>Ready to know more?</h2>
+    <p>We would love to hear from you!</p>
+    <button onclick="contactUs()">Contact Bublinks</button>
+  </section>
+</main>
 
-    <!-- About Section -->
-    <section id="about">
+<footer>
+  <p>© 2026 Bublinks Preschool</p>
+  <p>Learn • Play • Explore • Grow 🌱</p>
+</footer>
 
-        <h2>About Bublinks Preschool</h2>
-
-        <p>
-            Bublinks Preschool provides a friendly and engaging
-            learning environment for young children. We believe
-            children learn best through play, creativity and
-            exploration.
-        </p>
-
-    </section>
-
-
-    <!-- Programs Section -->
-    <section id="programs">
-
-        <h2>Our Programs 📚</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🧸 Play Group</h3>
-                <p>
-                    Fun activities that encourage children
-                    to learn and interact.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🎨 Nursery</h3>
-                <p>
-                    Creative learning through art,
-                    games and activities.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📖 LKG</h3>
-                <p>
-                    Building basic academic and
-                    communication skills.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🌟 UKG</h3>
-                <p>
-                    Preparing children for their
-                    next stage of education.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Activities Section -->
-    <section id="activities">
-
-        <h2>Fun Activities 🎨</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🎨 Art & Craft</h3>
-                <p>Encouraging creativity and imagination.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎵 Music</h3>
-                <p>Learning through songs and rhythm.</p>
-            </div>
-
-            <div class="card">
-                <h3>⚽ Games</h3>
-                <p>Fun activities for active learning.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <h2>Contact Us 📞</h2>
-
-        <p>We would love to hear from you!</p>
-
-        <button onclick="contactUs()">
-            Contact Bublinks
-        </button>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 Bublinks Preschool
-        </p>
-
-        <p>
-            Learn • Play • Explore • Grow 🌱
-        </p>
-
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>

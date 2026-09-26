@@ -1,110 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Admissions - Bublinks Preschool</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - Bublinks Preschool</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-    <img src="logo.png" alt="Bublinks Preschool Logo">
-</div>
-
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="programs.html">Programs</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="admission.html">Admissions</a>
-            <a href="contact.html">Contact</a>
-        </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/bublinks-logo.png" alt="Bublinks"></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="program.html">Programs</a>
+      <a href="gallary.html">Gallery</a>
+      <a href="admission.html">Admissions</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Heading -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Admissions 📝</h1>
-            <p>
-                Give your child a joyful beginning at
-                Bublinks Preschool.
-            </p>
-        </div>
-    </section>
+<main>
+  <section class="admission-section">
+  <div class="section-heading">
+    <h2>Admissions <span>🎓</span></h2>
+    <p>We would love to welcome your little one to Bublinks Preschool!</p>
+  </div>
 
-    <!-- Admission Form -->
-    <section>
+  <div class="admission-grid">
+    <article class="admission-card pink">
+      <div class="admission-icon">📝</div>
+      <h3>Enquire</h3>
+      <p>Contact us to learn more about our programs and admission process.</p>
+    </article>
 
-        <h2>Admission Enquiry</h2>
+    <article class="admission-card yellow">
+      <div class="admission-icon">👧</div>
+      <h3>Choose a Program</h3>
+      <p>Select the learning program that is right for your child.</p>
+    </article>
 
-        <form onsubmit="submitAdmission(event)">
+    <article class="admission-card green">
+      <div class="admission-icon">📋</div>
+      <h3>Apply</h3>
+      <p>Complete the admission details and submit your application.</p>
+    </article>
 
-            <input type="text" id="childName"
-                placeholder="Child's Name" required>
+    <article class="admission-card purple">
+      <div class="admission-icon">🎉</div>
+      <h3>Join Bublinks</h3>
+      <p>Begin your child's happy journey of learning, playing and growing.</p>
+    </article>
+  </div>
 
-            <br><br>
+  <div class="admission-note">
+    <h3>Have questions?</h3>
+    <p>Please contact Bublinks Preschool for admission enquiries.</p>
+    <a href="contact.html">Contact Us →</a>
+  </div>
+</section>
+</main>
 
-            <input type="text" id="parentName"
-                placeholder="Parent's Name" required>
-
-            <br><br>
-
-            <input type="tel" id="phone"
-                placeholder="Phone Number" required>
-
-            <br><br>
-
-            <input type="email" id="email"
-                placeholder="Email Address" required>
-
-            <br><br>
-
-            <select id="program" required>
-                <option value="">Select Program</option>
-                <option value="Play Group">Play Group</option>
-                <option value="Nursery">Nursery</option>
-                <option value="LKG">LKG</option>
-                <option value="UKG">UKG</option>
-            </select>
-
-            <br><br>
-
-            <textarea id="message"
-                placeholder="Your Message"
-                rows="5"></textarea>
-
-            <br><br>
-
-            <button type="submit">
-                Submit Enquiry
-            </button>
-
-        </form>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Bublinks Preschool</p>
-        <p>Learn • Play • Explore • Grow 🌱</p>
-    </footer>
-
-    <script>
-        function submitAdmission(event) {
-
-            event.preventDefault();
-
-            alert("Thank you! Your admission enquiry has been submitted. 🌈");
-
-        }
-    </script>
-
+<footer>
+  <p>© 2026 Bublinks Preschool</p>
+  <p>Learn • Play • Explore • Grow 🌱</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
