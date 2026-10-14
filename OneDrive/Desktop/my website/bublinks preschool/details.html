@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf1">
+
+  <title>Details | Bublinks Preschool &amp; Daycare</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .detail-page {
+      min-height: 60vh;
+      padding: 50px 24px 70px;
+      background: #f7fbff;
+      box-sizing: border-box;
+    }
+
+    .detail-page-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 44px;
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: 0 12px 40px rgba(30, 60, 90, 0.08);
+      box-sizing: border-box;
+    }
+
+    #detail-page-icon {
+      margin-bottom: 20px;
+      font-size: 56px;
+      line-height: 1.2;
+    }
+
+    #detail-page-title {
+      margin: 18px 0;
+      color: #193b56;
+      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      line-height: 1.12;
+      overflow-wrap: anywhere;
+    }
+
+    #detail-page-description {
+      margin: 0;
+      color: #53677a;
+      font-size: 18px;
+      line-height: 1.9;
+      white-space: pre-line;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-eyebrow {
+      margin: 0;
+      color: #287db3;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      line-height: 1.6;
+    }
+
+    .detail-information-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .detail-information-card {
+      min-width: 0;
+      padding: 26px;
+      border: 1px solid #e8eff5;
+      border-radius: 20px;
+      background: #fbfdff;
+      box-sizing: border-box;
+    }
+
+    .detail-information-card h2 {
+      margin: 0 0 18px;
+      color: #193b56;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .detail-information-card ul {
+      margin: 0;
+      padding-left: 22px;
+      color: #53677a;
+      line-height: 1.8;
+    }
+
+    .detail-information-card li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    .detail-information-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .detail-note {
+      margin-top: 22px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      background: #fff0f4;
+      color: #53677a;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .detail-page-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .detail-page-actions a {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 30px;
+      background: #287db3;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .detail-page-actions a:hover {
+      transform: translateY(-2px);
+    }
+
+    .detail-page-actions a.secondary {
+      background: #fff0f4;
+      color: #193b56;
+    }
+
+    .detail-page-actions a:focus-visible {
+      outline: 3px solid #f29ab7;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .detail-page {
+        padding: 30px 16px 45px;
+      }
+
+      .detail-page-inner {
+        padding: 28px 22px;
+        border-radius: 20px;
+      }
+
+      #detail-page-description {
+        font-size: 16px;
+      }
+
+      .detail-information-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .detail-information-card {
+        padding: 22px;
+      }
+
+      .detail-page-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .detail-page-actions a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="brand" href="index.html" aria-label="Bublinks Home">
+        <img
+          src="assets/bublinks-logo.png"
+          alt="Bublinks Preschool &amp; Daycare">
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Programs</a>
+        <a href="gallary.html">Gallery</a>
+        <a href="admission.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-page">
+      <div class="detail-page-inner">
+
+        <div id="detail-page-icon" aria-hidden="true">🌼</div>
+
+        <p class="detail-eyebrow">
+          BUBLINKS PRESCHOOL &amp; DAYCARE
+        </p>
+
+        <h1 id="detail-page-title">Explore Bublinks</h1>
+
+        <p id="detail-page-description">
+          Discover more about our learning activities and programs.
+          Contact Bublinks to learn more.
+        </p>
+
+        <div class="detail-information-grid">
+
+          <section class="detail-information-card">
+            <h2>What children can explore</h2>
+            <ul id="detail-page-activities">
+              <li>Age-appropriate activities and examples</li>
+              <li>Opportunities to explore and share ideas</li>
+              <li>Learning through everyday experiences</li>
+            </ul>
+          </section>
+
+          <section class="detail-information-card">
+            <h2>Learning benefits</h2>
+            <ul id="detail-page-benefits">
+              <li>Curiosity and exploration</li>
+              <li>Communication and expression</li>
+              <li>Confidence through learning</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <p class="detail-note">
+          Activities are examples of age-appropriate learning possibilities.
+          Specific activities and arrangements may vary. Please contact
+          Bublinks Preschool &amp; Daycare to confirm current offerings.
+        </p>
+
+        <div class="detail-page-actions">
+
+          <a href="admission.html">
+            Enquire About Admissions →
+          </a>
+
+          <a
+            id="back-to-page"
+            class="secondary"
+            href="index.html">
+            ← Back to Home
+          </a>
+
+          <a class="secondary" href="index.html">
+            Home
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>
+        © <span id="current-year">2026</span>
+        Bublinks Preschool &amp; Daycare.
+      </p>
+
+      <p>Learn • Play • Explore • Grow</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

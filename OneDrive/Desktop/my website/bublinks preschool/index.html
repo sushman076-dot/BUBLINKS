@@ -1,119 +1,447 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bublinks Preschool</title>
+  <meta name="theme-color" content="#fffaf1">
+  <meta name="description" content="Bublinks Preschool & Daycare in Sathnur, Bengaluru. A safe, fun and caring space for happy early learning.">
+  <title>Bublinks Preschool & Daycare | A Place to Bloom</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Homepage banner */
+    .homepage-banner {
+      position: relative !important;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .homepage-banner > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /*
+      Invisible link positioned over the pink Enquire Now button.
+      Only this rectangle is clickable.
+    */
+    .homepage-banner .banner-enquire-button {
+      position: absolute !important;
+      inset: auto !important;
+
+      left: 27.8% !important;
+      top: 65.3% !important;
+      width: 16.5% !important;
+      height: 17% !important;
+
+      display: block !important;
+      box-sizing: border-box !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+
+      background: transparent !important;
+      color: transparent !important;
+      font-size: 0 !important;
+      line-height: normal !important;
+      transform: none !important;
+
+      z-index: 99999 !important;
+      cursor: pointer;
+    }
+
+    .homepage-banner .banner-enquire-button:focus-visible {
+      outline: 3px solid #333 !important;
+      outline-offset: 3px;
+    }
+
+    /* Keep the clickable area aligned proportionally on mobile */
+    @media (max-width: 600px) {
+      .homepage-banner .banner-enquire-button {
+        left: 27.8% !important;
+        top: 65.3% !important;
+        width: 16.5% !important;
+        height: 17% !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html" aria-label="Bublinks Preschool Home">
-      <img src="assets/bublinks-logo.png" alt="Bublinks">
-    </a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Bublinks Home">
+        <img src="assets/bublinks-logo.png" alt="Bublinks Preschool & Daycare">
+      </a>
 
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      ☰
-    </button>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+        ☰
+      </button>
 
-    <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="program.html">Programs</a>
-      <a href="gallary.html">Gallery</a>
-      <a href="admission.html">Admissions</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Programs</a>
+        <a href="gallary.html">Gallery</a>
+        <a href="admission.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <!-- The supplied reference artwork is used here so the hero matches the picture. -->
-  <section class="hero">
-    <img src="assets/bublinks-hero.png" alt="Bublinks Preschool illustrated welcome scene">
-    <button class="hero-enquire" onclick="enquireNow()">Enquire Now →</button>
-  </section>
+  <main>
 
-  <section class="programs" id="programs">
-    <div class="section-heading">
-      <h2>Our Programs <span>✦</span></h2>
-      <p>Age-appropriate learning through fun and creativity.</p>
+    <!-- MAIN HOMEPAGE BANNER -->
+    <section class="homepage-banner" aria-label="Welcome to Bublinks Preschool">
+      <img
+        src="assets/bublinks-hero.png"
+        alt="Welcome to Bublinks Preschool — Where Little Minds Grow and Explore">
+
+      <a
+        class="banner-enquire-button"
+        href="admission.html"
+        aria-label="Enquire Now">
+      </a>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="welcome-section section-pad">
+      <div class="welcome-copy">
+        <span class="eyebrow">WELCOME TO BUBLINKS</span>
+        <h2>Every child deserves a beautiful beginning.</h2>
+
+        <p>
+          At Bublinks Preschool &amp; Daycare, we believe young children
+          learn best through play, exploration, experiences and
+          meaningful interactions.
+        </p>
+
+        <p>
+          Our approach encourages children to discover the world around
+          them, express their ideas, develop relationships and learn at
+          their own pace.
+        </p>
+
+        <a class="text-link" href="about.html">Get to know Bublinks →</a>
+      </div>
+
+      <div class="welcome-highlight">
+        <div class="highlight-icon">🌼</div>
+        <h3>A place to Bloom</h3>
+
+        <p>
+          A safe, joyful and nurturing environment where children can
+          learn, explore and grow.
+        </p>
+
+        <div class="highlight-values">
+          <span>💛 Care</span>
+          <span>🎨 Creativity</span>
+          <span>🌱 Growth</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESCHOOL PROGRAMS -->
+    <section class="programs-section section-pad" id="programs">
+      <div class="section-heading">
+        <span class="eyebrow">GROWING EVERY DAY</span>
+        <h2>Find their happy place to learn.</h2>
+        <p>Early learning experiences designed around children's developmental stages.</p>
+      </div>
+
+      <div class="program-grid">
+        <article class="program-card pink">
+          <div class="program-icon">🧸</div>
+          <span class="program-age">AGES 2–3 YEARS</span>
+          <h3>Playgroup</h3>
+          <p>Playful experiences that encourage early exploration, interaction and foundational learning.</p>
+          <a href="program.html">Explore Playgroup →</a>
+        </article>
+
+        <article class="program-card yellow">
+          <div class="program-icon">🎨</div>
+          <span class="program-age">AGES 3–4 YEARS</span>
+          <h3>Nursery</h3>
+          <p>Opportunities to develop communication, social skills and creative expression.</p>
+          <a href="program.html">Explore Nursery →</a>
+        </article>
+
+        <article class="program-card green">
+          <div class="program-icon">📚</div>
+          <span class="program-age">AGES 4–5 YEARS</span>
+          <h3>Junior KG</h3>
+          <p>Early literacy foundations, writing patterns and cognitive development through activities.</p>
+          <a href="program.html">Explore Junior KG →</a>
+        </article>
+
+        <article class="program-card purple">
+          <div class="program-icon">⭐</div>
+          <span class="program-age">AGES 5–6 YEARS</span>
+          <h3>Senior KG</h3>
+          <p>Kindergarten readiness and structured early education for the next stage of learning.</p>
+          <a href="program.html">Explore Senior KG →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- DAYCARE -->
+    <section class="daycare-section section-pad">
+      <div class="daycare-visual">
+        <div class="daycare-illustration" aria-hidden="true">
+          <span>🧸</span>
+          <span>🌈</span>
+          <span>🪁</span>
+          <span>🌻</span>
+        </div>
+      </div>
+
+      <div class="daycare-copy">
+        <span class="eyebrow">CARE THROUGH THE DAY</span>
+        <h2>A caring space for little ones, even after preschool.</h2>
+
+        <p>
+          Bublinks Daycare offers care for children aged 1.5 to 7 years,
+          with flexible care options for families.
+        </p>
+
+        <ul class="check-list">
+          <li>Full-time care options</li>
+          <li>Half-time care options</li>
+          <li>Flexible or hourly care options</li>
+        </ul>
+
+        <a class="btn btn-primary" href="contact.html">Ask About Daycare →</a>
+        <p class="small-note">Contact us to confirm availability and suitable care options.</p>
+      </div>
+    </section>
+
+    <!-- LEARNING APPROACH -->
+    <section class="learning-section section-pad">
+      <div class="section-heading">
+        <span class="eyebrow">HOW CHILDREN LEARN</span>
+        <h2>Learning is an adventure.</h2>
+        <p>We encourage children to learn through experiences, discovery and meaningful interactions.</p>
+      </div>
+
+      <div class="learning-grid">
+        <article class="learning-card">
+          <span class="learning-icon">🧩</span>
+          <h3>Learning Through Play</h3>
+          <p>Enjoyable activities that invite children to participate, explore and learn.</p>
+        </article>
+
+        <article class="learning-card">
+          <span class="learning-icon">🔍</span>
+          <h3>Explore &amp; Discover</h3>
+          <p>Opportunities to observe, ask questions and discover the world around them.</p>
+        </article>
+
+        <article class="learning-card">
+          <span class="learning-icon">🎨</span>
+          <h3>Hands-on Experiences</h3>
+          <p>Art, sensory activities, practical experiences and learning materials.</p>
+        </article>
+
+        <article class="learning-card">
+          <span class="learning-icon">📖</span>
+          <h3>Stories &amp; Rhymes</h3>
+          <p>Experiences that encourage language, imagination and communication.</p>
+        </article>
+
+        <article class="learning-card">
+          <span class="learning-icon">🌿</span>
+          <h3>Learning Beyond Class</h3>
+          <p>Nature walks, colour hunts, celebrations and real-world experiences.</p>
+        </article>
+
+        <article class="learning-card">
+          <span class="learning-icon">🤝</span>
+          <h3>Growing Together</h3>
+          <p>Sharing, kindness, teamwork, communication and growing independence.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="activities-section section-pad">
+      <div class="section-heading">
+        <span class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</span>
+        <h2>Discover, create and have fun.</h2>
+        <p>Experiences that make learning enjoyable and encourage curiosity and imagination.</p>
+      </div>
+
+      <div class="activity-grid">
+        <article class="activity-card activity-pink">
+          <span>🖍️</span>
+          <h3>Art &amp; Creativity</h3>
+          <p>Expressing ideas through art and hands-on activities.</p>
+        </article>
+
+        <article class="activity-card activity-yellow">
+          <span>📚</span>
+          <h3>Stories &amp; Rhymes</h3>
+          <p>Exploring language, stories and imagination.</p>
+        </article>
+
+        <article class="activity-card activity-green">
+          <span>🌿</span>
+          <h3>Explore Outdoors</h3>
+          <p>Discovering colours, nature and the world around us.</p>
+        </article>
+
+        <article class="activity-card activity-purple">
+          <span>🤗</span>
+          <h3>Social Learning</h3>
+          <p>Practising kindness, sharing and communication.</p>
+        </article>
+      </div>
+
+      <div class="center-action">
+        <a class="text-link" href="gallary.html">Visit our gallery →</a>
+      </div>
+    </section>
+
+    <!-- MISSION AND VISION -->
+    <section class="purpose-section section-pad">
+      <div class="purpose-card mission-card">
+        <span class="purpose-icon">💛</span>
+        <span class="eyebrow">OUR MISSION</span>
+        <h2>A joyful place to learn and grow.</h2>
+        <p>
+          To provide a safe, joyful and nurturing environment where
+          children learn through play, exploration and meaningful experiences.
+        </p>
+      </div>
+
+      <div class="purpose-card vision-card">
+        <span class="purpose-icon">🌈</span>
+        <span class="eyebrow">OUR VISION</span>
+        <h2>Confident, curious little explorers.</h2>
+        <p>
+          To nurture confident, curious and compassionate children who
+          love to learn and explore.
+        </p>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS CTA -->
+    <section class="admission-cta section-pad">
+      <div>
+        <span class="eyebrow">EVERY BIG JOURNEY STARTS SMALL</span>
+        <h2>Ready to begin your child's Bublinks journey?</h2>
+        <p>Connect with us to learn more about our preschool programs and daycare options.</p>
+      </div>
+
+      <div class="cta-actions">
+        <a class="btn btn-light" href="admission.html">Admission Enquiry →</a>
+        <a class="cta-phone" href="tel:+919902280866">Call us: +91 99022 80866</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section-pad">
+      <div class="section-heading">
+        <span class="eyebrow">COME SAY HELLO</span>
+        <h2>We'd love to hear from you.</h2>
+        <p>Reach out to learn more about Bublinks Preschool &amp; Daycare.</p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <span>📍</span>
+          <h3>Visit Us</h3>
+          <p>
+            Near Abhaya Anjaneya Temple,<br>
+            Abhaya Layout, Sathnur Village,<br>
+            Bengaluru, Karnataka – 562149
+          </p>
+          <a href="https://maps.app.goo.gl/c1aE46ws13sEQcDp6?g_st=ac" target="_blank" rel="noopener noreferrer">Get directions →</a>
+        </article>
+
+        <article class="contact-card">
+          <span>📞</span>
+          <h3>Call Us</h3>
+          <p>Speak with us about preschool and daycare.</p>
+          <a href="tel:+917204024222">+91 72040 24222</a>
+          <a href="tel:+919902280866">+91 99022 80866</a>
+        </article>
+
+        <article class="contact-card">
+          <span>✉️</span>
+          <h3>Email Us</h3>
+          <p>Send us your questions or enquiry.</p>
+          <a href="mailto:info.bublinks@gmail.com">info.bublinks@gmail.com</a>
+        </article>
+      </div>
+
+      <div class="hours-panel">
+        <div>
+          <span>☀️</span>
+          <h3>Preschool Hours</h3>
+          <p>Monday–Friday</p>
+          <strong>9:00 AM – 1:00 PM</strong>
+        </div>
+
+        <div>
+          <span>🌻</span>
+          <h3>Daycare Hours</h3>
+          <p>Monday–Friday</p>
+          <strong>8:30 AM – 5:00 PM</strong>
+          <p class="small-note">Saturday: 9:00 AM – 3:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <a href="index.html" aria-label="Bublinks Home">
+          <img src="assets/bublinks-logo.png" alt="Bublinks Preschool & Daycare">
+        </a>
+        <p>A safe, fun &amp; caring space for happy early learning.</p>
+        <strong>A place to Bloom 🌱</strong>
+      </div>
+
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Our Programs</a>
+        <a href="gallary.html">Gallery</a>
+        <a href="admission.html">Admissions</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Get in Touch</h3>
+        <a href="tel:+917204024222">+91 72040 24222</a>
+        <a href="tel:+919902280866">+91 99022 80866</a>
+        <a href="mailto:info.bublinks@gmail.com">info.bublinks@gmail.com</a>
+        <a href="https://maps.app.goo.gl/c1aE46ws13sEQcDp6?g_st=ac" target="_blank" rel="noopener noreferrer">Find our location →</a>
+      </div>
+
     </div>
 
-    <div class="program-grid">
-      <article class="program-card pink">
-        <div class="program-icon">🧸</div>
-        <h3>Play Group</h3>
-        <p>Fun activities that encourage children to learn and interact.</p>
-      </article>
-
-      <article class="program-card yellow">
-        <div class="program-icon">🎨</div>
-        <h3>Nursery</h3>
-        <p>Creative learning through art, games and activities.</p>
-      </article>
-
-      <article class="program-card green">
-        <div class="program-icon">📚</div>
-        <h3>LKG</h3>
-        <p>Building basic academic and communication skills.</p>
-      </article>
-
-      <article class="program-card purple">
-        <div class="program-icon">⭐</div>
-        <h3>UKG</h3>
-        <p>Preparing children for their next stage of education.</p>
-      </article>
+    <div class="footer-bottom">
+      <p>© <span id="current-year">2026</span> Bublinks Preschool &amp; Daycare.</p>
+      <p>Learn • Play • Explore • Grow</p>
     </div>
-  </section>
+  </footer>
 
- <section class="programs activities-section">
-  <div class="section-heading">
-    <h2>Fun Activities <span>🎨</span></h2>
-    <p>Learning becomes fun through creative activities.</p>
-  </div>
-
-  <div class="program-grid">
-    <article class="program-card pink">
-      <div class="program-icon">🎨</div>
-      <h3>Art & Craft</h3>
-      <p>Creative activities that help children express their imagination.</p>
-    </article>
-
-    <article class="program-card yellow">
-      <div class="program-icon">🎵</div>
-      <h3>Music & Dance</h3>
-      <p>Fun songs and movement activities that build confidence.</p>
-    </article>
-
-    <article class="program-card green">
-      <div class="program-icon">⚽</div>
-      <h3>Games</h3>
-      <p>Exciting indoor and outdoor games for active learning.</p>
-    </article>
-
-    <article class="program-card purple">
-      <div class="program-icon">📖</div>
-      <h3>Storytelling</h3>
-      <p>Interesting stories that encourage listening and imagination.</p>
-    </article>
-  </div>
-</section>
-
-  <section class="contact-strip">
-    <h2>Ready to know more?</h2>
-    <p>We would love to hear from you!</p>
-    <button onclick="contactUs()">Contact Bublinks</button>
-  </section>
-</main>
-
-<footer>
-  <p>© 2026 Bublinks Preschool</p>
-  <p>Learn • Play • Explore • Grow 🌱</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
+```
